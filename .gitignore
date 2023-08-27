@@ -39,4 +39,4 @@ out/
 ### properties ###
 application-oauth.properties
 
-/test
+#/test
