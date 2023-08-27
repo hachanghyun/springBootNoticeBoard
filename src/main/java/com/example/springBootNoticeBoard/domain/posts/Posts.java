@@ -2,7 +2,6 @@ package com.example.springBootNoticeBoard.domain.posts;
 
 import com.example.springBootNoticeBoard.domain.BaseTimeEntity;
 import lombok.Builder;
-import lombok.Generated;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -26,8 +25,7 @@ public class Posts extends BaseTimeEntity {
     private String author;
 
     @Builder
-    public Posts(Long id, String title, String content, String author) {
-        this.id = id;
+    public Posts(String title, String content, String author) {
         this.title = title;
         this.content = content;
         this.author = author;
@@ -36,6 +34,5 @@ public class Posts extends BaseTimeEntity {
     public void update(String title, String content) {
         this.title = title;
         this.content = content;
-
     }
 }
